@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>شركة الأغذية الطبيعية - الصفحة الرئيسية</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <!-- WOW.js CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <!-- Language Toggle -->
+    <div class="language-toggle">
+      <button id="langToggle" class="btn btn-outline-light btn-sm">
+        <i class="fas fa-globe"></i> <span id="langText">English</span>
+      </button>
+    </div>
+
+    <!-- Navigation -->
+    <nav
+      class="navbar navbar-expand-lg navbar-dark fixed-top"
+      style="background-color: #fc0000"
+    >
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#home" style="font-size: 1.8rem">
+          <img src="assets/images/logo.png" alt="logo" width="80" />
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                href="#home"
+                data-ar="الرئيسية"
+                data-en="Home"
+                >الرئيسية</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="pages/products.html"
+                data-ar="المنتجات"
+                data-en="Products"
+                >المنتجات</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="pages/about.html"
+                data-ar="حول الشركة"
+                data-en="About Us"
+                >حول الشركة</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="pages/contact.html"
+                data-ar="اتصل بنا"
+                data-en="Contact Us"
+                >اتصل بنا</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Carousel -->
+    <section id="home" class="hero-section">
+      <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#heroCarousel"
+            data-bs-slide-to="0"
+            class="active"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#heroCarousel"
+            data-bs-slide-to="1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#heroCarousel"
+            data-bs-slide-to="2"
+          ></button>
+        </div>
+
+        <div class="carousel-inner">
+          <!-- Slide 1 -->
+          <div class="carousel-item active">
+            <div
+              class="hero-slide"
+              style="
+                background: linear-gradient(135deg, #004514 0%, #fc0000 100%);
+              "
+            >
+              <div class="container">
+                <div class="row align-items-center min-vh-100">
+                  <div class="col-lg-6 wow fadeInRight">
+                    <div class="hero-content text-white">
+                      <h1
+                        class="display-4 fw-bold mb-4"
+                        data-ar="اكتشف أجود المنتجات الغذائية "
+                        data-en="Discover the Finest  Food Products"
+                      >
+                        اكتشف أجود المنتجات الغذائية
+                      </h1>
+                      <p
+                        class="lead mb-4"
+                        data-ar="نقدم لك تشكيلة واسعة من المنتجات الغذائية عالية الجودة المصنوعة من أجود المكونات الطبيعية"
+                        data-en="We offer you a wide range of high-quality food products made from the finest natural ingredients"
+                      >
+                        نقدم لك تشكيلة واسعة من المنتجات الغذائية عالية الجودة
+                        المصنوعة من أجود المكونات الطبيعية
+                      </p>
+                      <a
+                        href="pages/products.html"
+                        class="btn btn-warning btn-lg px-5 py-3"
+                        data-ar="اكتشف المزيد"
+                        data-en="Discover More"
+                      >
+                        اكتشف المزيد <i class="fas fa-arrow-left ms-2"></i>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 wow fadeInLeft">
+                    <div class="hero-image text-center">
+                      <img
+                        src="assets/images/tomato.jpg"
+                        alt="Natural Foods"
+                        class="img-fluid rounded-3 shadow-lg"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="carousel-item">
+            <div
+              class="hero-slide"
+              style="
+                background: linear-gradient(135deg, #fc0000 0%, #004514 100%);
+              "
+            >
+              <div class="container">
+                <div class="row align-items-center min-vh-100">
+                  <div class="col-lg-6 wow fadeInRight">
+                    <div class="hero-content text-white">
+                      <h1
+                        class="display-4 fw-bold mb-4"
+                        data-ar="طعم أصيل وجودة لا تضاهى"
+                        data-en="Authentic Taste and Unmatched Quality"
+                      >
+                        طعم أصيل وجودة لا تضاهى
+                      </h1>
+                      <p
+                        class="lead mb-4"
+                        data-ar="منتجاتنا تجمع بين النكهة الأصيلة والجودة العالية لتمنحك تجربة طعام لا تُنسى"
+                        data-en="Our products combine authentic flavor and high quality to give you an unforgettable food experience"
+                      >
+                        منتجاتنا تجمع بين النكهة الأصيلة والجودة العالية لتمنحك
+                        تجربة طعام لا تُنسى
+                      </p>
+                      <a
+                        href="pages/contact.html"
+                        class="btn btn-warning btn-lg px-5 py-3"
+                        data-ar="تواصل معنا"
+                        data-en="contact with us "
+                      >
+                        تواصل معنا
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 wow fadeInLeft">
+                    <div class="hero-image text-center">
+                      <img
+                        src="assets/images/tomato.jpg"
+                        alt="Quality Products"
+                        class="img-fluid rounded-3 shadow-lg"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="carousel-item">
+            <div
+              class="hero-slide"
+              style="
+                background: linear-gradient(
+                  45deg,
+                  #004514 0%,
+                  #fc0000 50%,
+                  #004514 100%
+                );
+              "
+            >
+              <div class="container">
+                <div class="row align-items-center min-vh-100">
+                  <div class="col-lg-6 wow fadeInRight">
+                    <div class="hero-content text-white">
+                      <h1
+                        class="display-4 fw-bold mb-4"
+                        data-ar="من المزرعة إلى مائدتك مباشرة"
+                        data-en="From Farm to Your Table Directly"
+                      >
+                        من المزرعة إلى مائدتك مباشرة
+                      </h1>
+                      <p
+                        class="lead mb-4"
+                        data-ar="نحرص على توفير منتجات طازجة وطبيعية 100% من مصادر موثوقة"
+                        data-en="We ensure fresh and 100% natural products from trusted sources"
+                      >
+                        نحرص على توفير منتجات طازجة وطبيعية 100% من مصادر موثوقة
+                      </p>
+                      <a
+                        href="pages/about.html"
+                        class="btn btn-warning btn-lg px-5 py-3"
+                        data-ar="اعرف المزيد"
+                        data-en="Learn More"
+                      >
+                        اعرف المزيد <i class="fas fa-info-circle ms-2"></i>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 wow fadeInLeft">
+                    <div class="hero-image text-center">
+                      <img
+                        src="assets/images/tomato.jpg"
+                        alt="Farm Fresh"
+                        class="img-fluid rounded-3 shadow-lg"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#heroCarousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#heroCarousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5 bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center mb-5 wow fadeInUp">
+            <h2
+              class="display-5 fw-bold text-dark mb-3"
+              data-ar="نبذة حول الشركة"
+              data-en="About Our Company"
+            >
+              نبذة حول الشركة
+            </h2>
+            <div
+              class="underline mx-auto mb-4"
+              style="
+                width: 100px;
+                height: 3px;
+                background: linear-gradient(to right, #fc0000, #004514);
+              "
+            ></div>
+          </div>
+        </div>
+        <div class="row align-items-center">
+          <div class="col-lg-6 wow fadeInLeft">
+            <div class="about-content">
+              <p
+                class="lead text-muted"
+                data-ar="تأسست شركتنا عام 2010 بهدف تقديم أفضل المنتجات الغذائية الطبيعية للعائلات. نحن نؤمن بأن الطعام الجيد هو أساس الحياة الصحية، لذلك نحرص على انتقاء أجود المكونات وتطبيق أعلى معايير الجودة في جميع منتجاتنا."
+                data-en="Four Seasons is considered one of the leading companies in the canned food industry worldwide. It offers a wide range of practical and high-quality food products, including jams, pickles, canned goods, and spices. Today, Four Seasons has become one of the major companies in its field, providing goodness and benefit to millions of families around the world.Four Seasons has proven to be a consistent brand, maintaining its high quality for over four decades. The company started as a brand offering two types of products and has now expanded to an impressive range of over 200 products, with this number increasing annually. Our products are distributed from Syria to all corners of the world."
+              >
+                تعتبر الفصول الأربعة إحدى الشركات الرائدة في مجال الأغذية
+                المعلّبة في كافة أنحاء العالم. وتقدم مجموعة واسعة من المنتجات
+                الغذائية العملية وذات الجودة العالية من المربيات والمخللات
+                والمعلبات والتوابل, واليوم باتت الفصول الأربعة إحدى الشركات
+                الكبرى في مجالها حيث تقدم الخير والمنفعة لملايين العائلات حول
+                العالم. أثبتت الفصول الأربعة أنها علامة تجارية متسقة حيث حافظت
+                على جودتها العالية على مدى أكثر من أربع عقود. بدأت الشركة من
+                علامة تجارية تقدم نوعين من المنتجات، ووصلت الآن إلى مجموعة
+                متألقة تزيد عن 200 منتج، مع زيادة هذا الرقم سنوياً، تتوزع
+                منتجاتنا من سوريا إلى كافة أنحاء العالم.
+              </p>
+              <p
+                class="text-muted"
+                data-ar="فريقنا المتخصص يعمل بشغف لضمان وصول منتجات طازجة ولذيذة إلى مائدتك."
+                data-en="Our specialized team works passionately to ensure fresh and delicious products reach your table."
+              >
+                فريقنا المتخصص يعمل بشغف لضمان وصول منتجات طازجة ولذيذة إلى
+                مائدتك.
+              </p>
+              <div class="row mt-4">
+                <div class="col-md-6">
+                  <div class="feature-item d-flex align-items-center mb-3">
+                    <div class="feature-icon me-3" style="color: #fc0000">
+                      <i class="fas fa-check-circle fa-2x"></i>
+                    </div>
+                    <div>
+                      <h6
+                        class="mb-1"
+                        data-ar="جودة عالية"
+                        data-en="High Quality"
+                      >
+                        جودة عالية
+                      </h6>
+                      <small
+                        class="text-muted"
+                        data-ar="معايير صارمة"
+                        data-en="Strict Standards"
+                        >معايير صارمة</small
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="feature-item d-flex align-items-center mb-3">
+                    <div class="feature-icon me-3" style="color: #004514">
+                      <i class="fas fa-leaf fa-2x"></i>
+                    </div>
+                    <div>
+                      <h6
+                        class="mb-1"
+                        data-ar="مكونات طبيعية"
+                        data-en="Natural Ingredients"
+                      >
+                        مكونات طبيعية
+                      </h6>
+                      <small
+                        class="text-muted"
+                        data-ar="100% طبيعي"
+                        data-en="100% Natural"
+                        >100% طبيعي</small
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 wow fadeInRight">
+            <div class="about-image text-center">
+              <img
+                src="assets/images/about.jpg"
+                alt="About Us"
+                class="img-fluid rounded-3 shadow"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Products Section -->
+    <section id="products" class="py-5" style="background-color: #f8f9fa">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center mb-5 wow fadeInUp">
+            <h2
+              class="display-5 fw-bold text-dark mb-3"
+              data-ar="منتجاتنا المميزة"
+              data-en="Our Featured Products"
+            >
+              منتجاتنا المميزة
+            </h2>
+            <div
+              class="underline mx-auto mb-4"
+              style="
+                width: 100px;
+                height: 3px;
+                background: linear-gradient(to right, #fc0000, #004514);
+              "
+            ></div>
+            <p
+              class="lead text-muted"
+              data-ar="اكتشف تشكيلتنا الواسعة من المنتجات الطبيعية عالية الجودة"
+              data-en="Discover our wide range of high-quality natural products"
+            >
+              اكتشف تشكيلتنا الواسعة من المنتجات الطبيعية عالية الجودة
+            </p>
+          </div>
+        </div>
+
+        <div class="row" id="productsContainer">
+          <!-- Products will be loaded dynamically -->
+        </div>
+
+        <div class="text-center mt-5 wow fadeInUp">
+          <button
+            class="btn btn-outline-danger btn-lg px-5"
+            onclick="window.location.href='pages/products.html'"
+            data-ar="عرض جميع المنتجات"
+            data-en="View All Products"
+          >
+            عرض جميع المنتجات <i class="fas fa-arrow-left ms-2"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section
+      class="py-5"
+      style="background: linear-gradient(135deg, #004514 0%, #fc0000 100%)"
+    >
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center mb-5 wow fadeInUp">
+            <h2
+              class="display-5 fw-bold text-white mb-3"
+              data-ar="آراء عملائنا"
+              data-en="Customer Reviews"
+            >
+              آراء عملائنا
+            </h2>
+            <div
+              class="underline mx-auto mb-4"
+              style="width: 100px; height: 3px; background: #ffc107"
+            ></div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4 mb-4 wow fadeInLeft">
+            <div class="testimonial-card bg-white rounded-3 p-4 shadow h-100">
+              <div class="stars mb-3">
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+              </div>
+              <p
+                class="text-muted mb-3"
+                data-ar="منتجات رائعة وجودة عالية، أنصح بها بشدة لكل العائلات"
+                data-en="Excellent products and high quality, I highly recommend them to all families"
+              >
+                "منتجات رائعة وجودة عالية، أنصح بها بشدة لكل العائلات"
+              </p>
+              <div class="d-flex align-items-center">
+                <div class="avatar me-3">
+                  <div
+                    class="rounded-circle bg-danger d-flex align-items-center justify-content-center text-white"
+                    style="width: 50px; height: 50px"
+                  >
+                    <i class="fas fa-user"></i>
+                  </div>
+                </div>
+                <div>
+                  <h6 class="mb-0" data-ar="أحمد محمد" data-en="Ahmed Mohammed">
+                    أحمد محمد
+                  </h6>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 mb-4 wow fadeInUp">
+            <div class="testimonial-card bg-white rounded-3 p-4 shadow h-100">
+              <div class="stars mb-3">
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+              </div>
+              <p
+                class="text-muted mb-3"
+                data-ar="طعم طبيعي ولذيذ، أطفالي يحبون جميع المنتجات"
+                data-en="Natural and delicious taste, my children love all the products"
+              >
+                "طعم طبيعي ولذيذ، أطفالي يحبون جميع المنتجات"
+              </p>
+              <div class="d-flex align-items-center">
+                <div class="avatar me-3">
+                  <div
+                    class="rounded-circle bg-success d-flex align-items-center justify-content-center text-white"
+                    style="width: 50px; height: 50px"
+                  >
+                    <i class="fas fa-user"></i>
+                  </div>
+                </div>
+                <div>
+                  <h6 class="mb-0" data-ar="فاطمة علي" data-en="Fatima Ali">
+                    فاطمة علي
+                  </h6>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 mb-4 wow fadeInRight">
+            <div class="testimonial-card bg-white rounded-3 p-4 shadow h-100">
+              <div class="stars mb-3">
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+              </div>
+              <p
+                class="text-muted mb-3"
+                data-ar="خدمة ممتازة وتوصيل سريع، شكراً لكم"
+                data-en="Excellent service and fast delivery, thank you"
+              >
+                "خدمة ممتازة وتوصيل سريع، شكراً لكم"
+              </p>
+              <div class="d-flex align-items-center">
+                <div class="avatar me-3">
+                  <div
+                    class="rounded-circle bg-warning d-flex align-items-center justify-content-center text-white"
+                    style="width: 50px; height: 50px"
+                  >
+                    <i class="fas fa-user"></i>
+                  </div>
+                </div>
+                <div>
+                  <h6 class="mb-0" data-ar="محمد حسن" data-en="Mohammed Hassan">
+                    محمد حسن
+                  </h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 mb-4">
+            <h5
+              class="fw-bold mb-3"
+              data-ar=" الفصول الأربعة"
+              data-en=" Foue Seasons"
+            >
+              الفصول الأربعة
+            </h5>
+            <p
+              data-ar="نحن نقدم أفضل المنتجات الغذائية الطبيعية عالية الجودة للعائلات في جميع أنحاء المنطقة."
+              data-en="We provide the best high-quality natural food products for families throughout the region."
+            >
+              نحن نقدم أفضل المنتجات الغذائية الطبيعية عالية الجودة للعائلات في
+              جميع أنحاء المنطقة.
+            </p>
+            <div class="social-links">
+              <a href="#" class="text-white me-3"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="#" class="text-white me-3"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a href="#" class="text-white me-3"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#" class="text-white me-3"
+                ><i class="fab fa-whatsapp"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 mb-4">
+            <h5
+              class="fw-bold mb-3"
+              data-ar="روابط سريعة"
+              data-en="Quick Links"
+            >
+              روابط سريعة
+            </h5>
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <a
+                  href="#home"
+                  class="text-decoration-none"
+                  data-ar="الرئيسية"
+                  data-en="Home"
+                  >الرئيسية</a
+                >
+              </li>
+              <li class="mb-2">
+                <a
+                  href="pages/products.html"
+                  class="text-decoration-none"
+                  data-ar="المنتجات"
+                  data-en="Products"
+                  >المنتجات</a
+                >
+              </li>
+              <li class="mb-2">
+                <a
+                  href="pages/about.html"
+                  class="text-decoration-none"
+                  data-ar="حول الشركة"
+                  data-en="About Us"
+                  >حول الشركة</a
+                >
+              </li>
+              <li class="mb-2">
+                <a
+                  href="pages/contact.html"
+                  class="text-decoration-none"
+                  data-ar="اتصل بنا"
+                  data-en="Contact Us"
+                  >اتصل بنا</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4 mb-4">
+            <h5
+              class="fw-bold mb-3"
+              data-ar="معلومات الاتصال"
+              data-en="Contact Info"
+            >
+              معلومات الاتصال
+            </h5>
+            <div class="contact-info">
+              <div class="d-flex align-items-center mb-2">
+                <i
+                  class="fas fa-map-marker-alt me-2"
+                  style="color: #fc0000"
+                ></i>
+                <span
+                  data-ar="المنطقة الصناعية، دمشق، سوريا"
+                  data-en="Industrial Zone, Damascus, Syria"
+                  >المنطقة الصناعية، دمشق، سوريا</span
+                >
+              </div>
+              <div class="d-flex align-items-center mb-2">
+                <i class="fas fa-phone me-2" style="color: #fc0000"></i>
+                <span>+963-11-1234567</span>
+              </div>
+              <div class="d-flex align-items-center mb-2">
+                <i class="fas fa-envelope me-2" style="color: #fc0000"></i>
+                <span>info@foodcompany.com</span>
+              </div>
+              <div class="d-flex align-items-center">
+                <i class="fas fa-clock me-2" style="color: #fc0000"></i>
+                <span
+                  data-ar="السبت - الخميس: 8:00 ص - 6:00 م"
+                  data-en="Sat - Thu: 8:00 AM - 6:00 PM"
+                  >السبت - الخميس: 8:00 ص - 6:00 م</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <hr class="my-4" />
+
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <p
+              class="mb-0"
+              data-ar="© 2025 الأغذية الطبيعية. جميع الحقوق محفوظة."
+              data-en="© 2025 Natural Foods. All rights reserved."
+            >
+              © 2025 جميع الحقوق محفوظة لصالح شركة الفصول الأربعة .
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- WOW.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>

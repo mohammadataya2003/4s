@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>المنتجات - شركة الأغذية الطبيعية</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <!-- WOW.js CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../assets/css/style.css" />
+  </head>
+  <body>
+    <!-- Language Toggle -->
+    <div class="language-toggle">
+      <button id="langToggle" class="btn btn-outline-light btn-sm">
+        <i class="fas fa-globe"></i> <span id="langText">English</span>
+      </button>
+    </div>
+
+    <!-- Navigation -->
+    <nav
+      class="navbar navbar-expand-lg navbar-dark fixed-top"
+      style="background-color: #fc0000"
+    >
+      <div class="container">
+        <a
+          class="navbar-brand fw-bold"
+          href="../index.html"
+          style="font-size: 1.8rem"
+        >
+          <img src="../assets/images/logo.png" alt="logo" width="80" />
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="../index.html"
+                data-ar="الرئيسية"
+                data-en="Home"
+                >الرئيسية</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                href="products.html"
+                data-ar="المنتجات"
+                data-en="Products"
+                >المنتجات</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="about.html"
+                data-ar="حول الشركة"
+                data-en="About Us"
+                >حول الشركة</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="contact.html"
+                data-ar="اتصل بنا"
+                data-en="Contact Us"
+                >اتصل بنا</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section
+      class="py-5 mt-5"
+      style="background: linear-gradient(135deg, #fc0000 0%, #004514 100%)"
+    >
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center text-white">
+            <h1
+              class="display-4 fw-bold mb-3 wow fadeInUp"
+              data-ar="منتجاتنا"
+              data-en="Our Products"
+            >
+              منتجاتنا
+            </h1>
+            <p
+              class="lead wow fadeInUp"
+              data-wow-delay="0.2s"
+              data-ar="اكتشف تشكيلتنا الواسعة من المنتجات الغذائية الطبيعية عالية الجودة"
+              data-en="Discover our wide range of high-quality natural food products"
+            >
+              اكتشف تشكيلتنا الواسعة من المنتجات الغذائية الطبيعية عالية الجودة
+            </p>
+            <div class="breadcrumb-nav mt-4 wow fadeInUp" data-wow-delay="0.4s">
+              <nav aria-label="breadcrumb">
+                <ol class="breadcrumb justify-content-center bg-transparent">
+                  <li class="breadcrumb-item">
+                    <a
+                      href="../index.html"
+                      class="text-white text-decoration-none"
+                      data-ar="الرئيسية"
+                      data-en="Home"
+                      >الرئيسية</a
+                    >
+                  </li>
+                  <li
+                    class="breadcrumb-item active text-warning"
+                    data-ar="المنتجات"
+                    data-en="Products"
+                  >
+                    المنتجات
+                  </li>
+                </ol>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="py-5">
+      <div class="container">
+        <!-- Search and Filter -->
+        <div class="row mb-5">
+          <div class="col-lg-12">
+            <div
+              class="search-filter-container bg-light rounded-3 p-4 shadow-sm wow fadeInUp"
+            >
+              <div class="row align-items-center">
+                <div class="col-md-6 mb-3 mb-md-0">
+                  <div class="search-box position-relative">
+                    <input
+                      type="text"
+                      id="searchInput"
+                      class="form-control form-control-lg pe-5"
+                      data-ar-placeholder="ابحث عن المنتجات..."
+                      data-en-placeholder="Search for products..."
+                      placeholder="ابحث عن المنتجات..."
+                    />
+                    <i
+                      class="fas fa-search position-absolute top-50 end-0 translate-middle-y me-3 text-muted"
+                    ></i>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="filter-buttons d-flex flex-wrap gap-2">
+                    <button
+                      class="btn btn-outline-danger active"
+                      data-category="all"
+                      data-ar="الكل"
+                      data-en="All"
+                    >
+                      الكل
+                    </button>
+                    <button
+                      class="btn btn-outline-danger"
+                      data-category="chips"
+                      data-ar="رقائق ومقرمشات"
+                      data-en="Chips & Snacks"
+                    >
+                      رقائق ومقرمشات
+                    </button>
+                    <button
+                      class="btn btn-outline-danger"
+                      data-category="nuts"
+                      data-ar="مكسرات وبذور"
+                      data-en="Nuts & Seeds"
+                    >
+                      مكسرات وبذور
+                    </button>
+                    <button
+                      class="btn btn-outline-danger"
+                      data-category="fruits"
+                      data-ar="فواكه مجففة"
+                      data-en="Dried Fruits"
+                    >
+                      فواكه مجففة
+                    </button>
+                    <button
+                      class="btn btn-outline-danger"
+                      data-category="bakery"
+                      data-ar="المخبوزات"
+                      data-en="Bakery"
+                    >
+                      المخبوزات
+                    </button>
+                    <button
+                      class="btn btn-outline-danger"
+                      data-category="honey"
+                      data-ar="المربيات والعسل"
+                      data-en="Jams & Honey"
+                    >
+                      المربيات والعسل
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sort Options -->
+        <div class="row mb-4">
+          <div class="col-lg-12">
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="results-count">
+                <span
+                  id="resultsCount"
+                  class="text-muted"
+                  data-ar="عرض جميع المنتجات"
+                  data-en="Showing all products"
+                  >عرض جميع المنتجات</span
+                >
+              </div>
+              <div class="sort-options">
+                <select id="sortSelect" class="form-select" style="width: auto">
+                  <option
+                    value="name"
+                    data-ar="ترتيب حسب الاسم"
+                    data-en="Sort by Name"
+                  >
+                    ترتيب حسب الاسم
+                  </option>
+                  <option
+                    value="category"
+                    data-ar="ترتيب حسب الفئة"
+                    data-en="Sort by Category"
+                  >
+                    ترتيب حسب الفئة
+                  </option>
+                  <option
+                    value="newest"
+                    data-ar="الأحدث أولاً"
+                    data-en="Newest First"
+                  >
+                    الأحدث أولاً
+                  </option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Products Grid -->
+        <div class="row" id="productsGrid">
+          <!-- Products will be loaded here -->
+        </div>
+
+        <!-- Load More Button -->
+        <div class="row mt-5">
+          <div class="col-lg-12 text-center">
+            <button
+              id="loadMoreBtn"
+              class="btn btn-outline-danger btn-lg px-5"
+              style="display: none"
+            >
+              <span data-ar="تحميل المزيد" data-en="Load More"
+                >تحميل المزيد</span
+              >
+              <i class="fas fa-chevron-down ms-2"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- No Results Message -->
+        <div id="noResults" class="row mt-5" style="display: none">
+          <div class="col-lg-12 text-center">
+            <div class="no-results-container">
+              <i class="fas fa-search fa-5x text-muted mb-4"></i>
+              <h3
+                class="text-muted mb-3"
+                data-ar="لم يتم العثور على منتجات"
+                data-en="No Products Found"
+              >
+                لم يتم العثور على منتجات
+              </h3>
+              <p
+                class="text-muted"
+                data-ar="جرب البحث بكلمات مختلفة أو تصفح جميع الفئات"
+                data-en="Try searching with different keywords or browse all categories"
+              >
+                جرب البحث بكلمات مختلفة أو تصفح جميع الفئات
+              </p>
+              <button
+                class="btn btn-danger"
+                onclick="clearFilters()"
+                data-ar="مسح الفلاتر"
+                data-en="Clear Filters"
+              >
+                مسح الفلاتر
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 mb-4">
+            <h5
+              class="fw-bold mb-3"
+              data-ar=" الفصول الأربعة"
+              data-en="Four Seasons"
+            >
+              الفصول الأربعة
+            </h5>
+            <p
+              data-ar="نحن نقدم أفضل المنتجات الغذائية الطبيعية عالية الجودة للعائلات في جميع أنحاء المنطقة."
+              data-en="We provide the best high-quality natural food products for families throughout the region."
+            >
+              نحن نقدم أفضل المنتجات الغذائية الطبيعية عالية الجودة للعائلات في
+              جميع أنحاء المنطقة.
+            </p>
+            <div class="social-links">
+              <a href="#" class="text-white me-3"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="#" class="text-white me-3"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a href="#" class="text-white me-3"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#" class="text-white me-3"
+                ><i class="fab fa-whatsapp"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 mb-4">
+            <h5
+              class="fw-bold mb-3"
+              data-ar="روابط سريعة"
+              data-en="Quick Links"
+            >
+              روابط سريعة
+            </h5>
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <a
+                  href="#home"
+                  class="text-decoration-none"
+                  data-ar="الرئيسية"
+                  data-en="Home"
+                  >الرئيسية</a
+                >
+              </li>
+              <li class="mb-2">
+                <a
+                  href="pages/products.html"
+                  class="text-decoration-none"
+                  data-ar="المنتجات"
+                  data-en="Products"
+                  >المنتجات</a
+                >
+              </li>
+              <li class="mb-2">
+                <a
+                  href="pages/about.html"
+                  class="text-decoration-none"
+                  data-ar="حول الشركة"
+                  data-en="About Us"
+                  >حول الشركة</a
+                >
+              </li>
+              <li class="mb-2">
+                <a
+                  href="pages/contact.html"
+                  class="text-decoration-none"
+                  data-ar="اتصل بنا"
+                  data-en="Contact Us"
+                  >اتصل بنا</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4 mb-4">
+            <h5
+              class="fw-bold mb-3"
+              data-ar="معلومات الاتصال"
+              data-en="Contact Info"
+            >
+              معلومات الاتصال
+            </h5>
+            <div class="contact-info">
+              <div class="d-flex align-items-center mb-2">
+                <i
+                  class="fas fa-map-marker-alt me-2"
+                  style="color: #fc0000"
+                ></i>
+                <span
+                  data-ar="المنطقة الصناعية، دمشق، سوريا"
+                  data-en="Industrial Zone, Damascus, Syria"
+                  >المنطقة الصناعية، دمشق، سوريا</span
+                >
+              </div>
+              <div class="d-flex align-items-center mb-2">
+                <i class="fas fa-phone me-2" style="color: #fc0000"></i>
+                <span>+963-11-1234567</span>
+              </div>
+              <div class="d-flex align-items-center mb-2">
+                <i class="fas fa-envelope me-2" style="color: #fc0000"></i>
+                <span>info@foodcompany.com</span>
+              </div>
+              <div class="d-flex align-items-center">
+                <i class="fas fa-clock me-2" style="color: #fc0000"></i>
+                <span
+                  data-ar="السبت - الخميس: 8:00 ص - 6:00 م"
+                  data-en="Sat - Thu: 8:00 AM - 6:00 PM"
+                  >السبت - الخميس: 8:00 ص - 6:00 م</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <hr class="my-4" />
+
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <p
+              class="mb-0"
+              data-ar="© 2025 الأغذية الطبيعية. جميع الحقوق محفوظة."
+              data-en="© 2025 Natural Foods. All rights reserved."
+            >
+              © 2025 جميع الحقوق محفوظة لصالح شركة الفصول الأربعة .
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- WOW.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <!-- Custom JS -->
+    <script src="../assets/js/script.js"></script>
+    <script src="../assets/js/products.js"></script>
+  </body>
+</html>
